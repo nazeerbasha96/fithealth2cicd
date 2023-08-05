@@ -1,0 +1,9 @@
+---
+# defaults file for tomcat10
+tomcat_download_url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27.tar.gz
+tomcat_download_dir: apache-tomcat-10.0.27
+tomcat_install_dir: /u01/middleware
+tomcat_dir: tomcat10
+jdk_pkg: openjdk-11-jdk
+tomcat_os_user: tomcat
+tomcat_os_group: tomcat

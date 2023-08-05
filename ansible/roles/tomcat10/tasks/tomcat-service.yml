@@ -1,0 +1,15 @@
+---
+- name: create tomcat service
+  template:
+    src: templates/tomcat.service.j2
+    dest: /etc/systemd/system/tomcat.service
+    mode: "0644"
+  become: yes
+- name: daemon reload
+  systemd:
+    daemon_reload: yes
+  become: yes
+  notify: 
+    - tomcat
+
+    

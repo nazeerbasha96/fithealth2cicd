@@ -1,0 +1,11 @@
+# ---
+# - name: import db-shecme sql file
+#   mysql_db:
+#     state: import
+#     name: all
+#     target: /tmp/fithealth2/src/main/db/db-schema.sql
+#     login_host: {{db_host}}
+#     login_host: root
+#     login_host: welcome1
+
+# ...

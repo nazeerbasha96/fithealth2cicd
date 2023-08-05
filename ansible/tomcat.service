@@ -1,0 +1,20 @@
+[Unit]
+Description=Apache Tomcat Server
+After=network.target
+
+[Service]
+Type=forking
+Environment=JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+Environment=CATALINA_HOME=/u01/middleware/apache-tomcat-10.0.26
+Environment=CATALINA_BASE=/u01/middleware/apache-tomcat-10.0.26
+
+ExecStart=/u01/middleware/apache-tomcat-10.0.26/bin/startup.sh
+ExecStop=/u01/middleware/apache-tomcat-10.0.26/bin/shutdown.sh
+
+User=ubuntu
+Group=ubuntu
+RestartSec=20
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

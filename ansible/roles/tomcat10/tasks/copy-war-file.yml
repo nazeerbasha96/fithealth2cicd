@@ -1,0 +1,11 @@
+--- 
+- name: copy war file
+  copy:
+    src: "/tmp/fithealth2/target/fithealth2.war"
+    dest: "/{{tomcat_install_dir}}/{{tomcat_dir}}/webapps"
+    owner: "{{tomcat_os_user}}"
+    group: "{{tomcat_os_group}}"
+    mode: "0755"
+    
+  become: yes  
+    

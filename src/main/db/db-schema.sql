@@ -1,7 +1,7 @@
-CREATE DATABASE `fithealthdb`;
+CREATE DATABASE IF NOT EXISTS `fithealthdb`;
 use  `fithealthdb`;
 
-CREATE TABLE `patient` (
+CREATE TABLE IF NOT EXISTS `patient` (
   `patient_no` int NOT NULL AUTO_INCREMENT,
   `patient_nm` varchar(45) DEFAULT NULL,
   `mobile_nbr` varchar(45) DEFAULT NULL,
